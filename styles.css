@@ -1,0 +1,165 @@
+body {
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    height: 100%;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 0.8rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    padding: 0.5rem 1.8rem;
+    color: hsl(224, 23%, 55%)
+}
+
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.img-illustration {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.order-container {
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+}
+
+.price-container {
+    display: flex;
+    gap: 1.5rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    margin: 0 1.8rem;
+}
+
+.music-icon {
+    height: 2.5rem;
+}
+
+.price {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.annual-plan {
+    font-weight: 700;
+}
+
+.price-plan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.change-plan {
+    text-decoration: underline;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.change-plan:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 52%, 0.7);
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.1rem 2rem;
+    margin-bottom: 1.3rem;
+}
+
+.payment-btn {
+    border: 0;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    height: 2.5rem;
+    font-weight: 700;
+    color: hsl(225, 100%, 98%);
+    box-shadow: 0 9px 25px hsl(245, 75%, 52%, 0.5);
+}
+
+.payment-btn:hover {
+    background-color: hsl(245, 75%, 52%, 0.7);
+    cursor: pointer;
+}
+
+.cancel-btn {
+    border: 0;
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+}
+
+.cancel-btn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(245, 75%, 52%);
+}
+
+@media (max-width: 735px) {
+    body {
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .card {
+        width: 20rem;
+    }
+}
+
+@media (min-width: 735px) {
+
+    body {
+        background-image: url("./images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: hsl(225, 100%, 94%);
+    }
+
+    .card {
+        width: 22rem;
+
+    }
+}
